@@ -1,6 +1,8 @@
 body {
  font-family: 'Muli', sans-serif;
- background-color: #dee0e2;
+ /*background-color: #dee0e2;*/
+ background-image: url("http://wallpaperpulse.com/img/1334794.jpg");
+
 }
 
 .lineMargin {
@@ -27,7 +29,7 @@ body {
 }
 
 .well {
-  background-color: #b8c5db;
+  background-color:  #a6d8a6;
 }
 
 h3 {
@@ -38,4 +40,8 @@ h3 {
   padding-bottom: 20px;
   margin-left: 20px;
   margin-right: 30px;
+}
+.btn:hover {
+  background-color: #555;
+  color: white;
 }
