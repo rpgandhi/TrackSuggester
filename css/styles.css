@@ -3,7 +3,7 @@
 }
 
 body {
- font-family: 'Slabo 27px', serif;
+ font-family: 'Slabo 40px', serif;
 }
 
 .lineMargin {
@@ -18,7 +18,15 @@ h2 {
   margin-left: 25px;
 }
 
-#chdesktop {
+#chdesktop, #mobileChoice, #howint {
 
-  margin-left: 40px;
+  margin-left: 65px;
+}
+
+#nameStyle {
+  padding-bottom: 20px;
+}
+
+.well {
+  background-color: #b8c5db;
 }

@@ -11,16 +11,16 @@
   <body>
     <div class="container">
       <h1>Track Suggester</h1>
-      <p>Deciding which pogramming language to learn in coding school can feel like a daunting challenge, but it doesn't have to be complicated. Take this to find out which language you should learn first.</p>
+      <p>Deciding which pogramming language to learn in coding school can feel like a daunting challenge, but it doesn't have to be complicated. Take this quiz to find out which language you may be best suited for.</p>
 
       <form id="formOne">
 
-        <div>
+        <div id="nameStyle" class="well">
           <label for="name" class="lineMargin">What is your name?</label>
           <input id="name" class="form-control" type="text"></input>
         </div>
 
-        <div>
+        <div class="well">
           <label for="whyCode" class="lineMargin">Why do you want to code?</label>
           <select id="whyCode">
             <option value="prodev">Be a professinal developer</option>
@@ -29,46 +29,38 @@
         </div>
 
         <div class="well">
+
           <label for="whichPlatform" class="lineMargin">Are you most interested in:</label>
           <select id="whichPlatform">
             <option value="web">Web development</option>
             <option value="mobile">Mobile development</option>
             <option value="desktop" class="chooseDesktop">Desktop software</option>
-
-            <label for="desktopChoice" class="lineMargin">Which of these would you prefer?</label>
-            <select id="desktopChoice">
-              <option value="wind">Windows</option>
-              <option value="cross">Cross platform</>
-            </select>
           </select>
-        </div>
 
-        <div id="chdesktop">
-          <label for="desktopChoice" class="lineMargin">Which of these would you prefer?</label>
-          <select id="desktopChoice">
-            <option value="wind">Windows</option>
-            <option value="cross">Cross platform</>
-          </select>
-        </div>
-
-
-        <div>
-          <label for="mostInteresting" class="lineMargin">What do you find most interesting?</label>
+          <div id="howint">
+          <label for="mostInteresting" class="lineMargin">If you chose web development, what do you find most interesting?</label>
           <select id="mostInteresting">
             <option value="howInteract">How things interact with other things</option>
             <option value="howWork">How things work</option>
           </select>
-        </div>
+          </div>
 
-        <div id="mobileChoice">
-          <label for="mobileOption" class="lineMargin">Which are you more interested in?</label>
-          <select id="mobileOption">
-            <option value="androidDev">Android development</option>
-            <option value="windowsDev">Windows development</option>
+          <div id="mobileChoice">
+            <label for="mobileOption" class="lineMargin">If you chose mobile development, which are you more interested in?</label>
+            <select id="mobileOption">
+              <option value="androidDev">Android development</option>
+              <option value="windowsDev">Windows development</option>
+            </select>
+          </div>
+
+          <div id="chdesktop">
+          <label for="desktopChoice" class="lineMargin">If you chose desktop sofware development, which of these would you prefer?</label>
+          <select id="desktopChoice">
+            <option value="wind">Windows</option>
+            <option value="cross">Cross platform</>
           </select>
+          </div>
         </div>
-
-
 
         <button type="submit" class="btn">Find my programming language!</button>
 
