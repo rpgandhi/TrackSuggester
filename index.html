@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <title>Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Track Suggester</h1>
+      <p>Deciding which pogramming language to learn in coding school can feel like a daunting challenge, but it doesn't have to be complicated. Take this to find out which language you should learn first.</p>
+
+      <form id="formOne">
+
+        <div>
+          <label for="name" class="lineMargin">What is your name?</label>
+          <input id="name" class="form-control" type="text"></input>
+        </div>
+
+        <div>
+          <label for="whyCode" class="lineMargin">Why do you want to code?</label>
+          <select id="whyCode">
+            <option value="prodev">Be a professinal developer</option>
+            <option value="buildFun">Build something fun</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="whichPlatform" class="lineMargin">Are you most interested in:</label>
+          <select id="whichPlatform">
+            <option value="web">Web development</option>
+            <option value="mobile">Mobile development</option>
+            <option value="desktop">Desktop software</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mostInteresting" class="lineMargin">What do you find most interesting?</label>
+          <select id="mostInteresting">
+            <option value="howInteract">How things interact with other things</option>
+            <option value="howWork">How things work</option>
+          </select>
+        </div>
+
+        <div id="mobileChoice">
+          <label for="mobileOption" class="lineMargin">Which are you more interested in?</label>
+          <select id="mobileOption">
+            <option value="androidDev">Android development</option>
+            <option value="windowsDev">Windows development</option>
+          </select>
+        </dev>
+
+        <button type="submit" class="btn">Find my programming language!</button>
+
+      </form>
+    </div>
+
+    <div>
+      <div id="results" class="hideResults">
+      <h2><span class="userName"></span> you have been matched with:</h2>
+      </div>
+
+      <div id="cSharp" class="hideResults">
+        <img src="">
+        <h3>c#/.NET</h3>
+      </div>
+
+      <div id="java" class="hideResults">
+        <img src="">
+        <h3>Java</h3>
+      </div>
+
+      <div id="ruby" class="hideResults">
+        <img src="">
+        <h3>Ruby/Rails</h3>
+      </div>
+
+      <div id="html" class="hideResults">
+        <h3>HTML/JavaScript</h3>
+      </div>
+    </div>
+
+  </body>
+</html>
