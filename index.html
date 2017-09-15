@@ -5,13 +5,15 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli"     rel="stylesheet">
     <title>Track Suggester</title>
   </head>
   <body>
     <div class="container">
-      <h1>Track Suggester</h1>
-      <p>Deciding which pogramming language to learn in coding school can feel like a daunting challenge, but it doesn't have to be complicated. Take this quiz to find out which language you may be best suited for.</p>
+      <div class="header">
+        <h1>Track Suggester</h1>
+        <p1>Deciding which pogramming language to learn in coding school can feel like a daunting challenge, but it doesn't have to be complicated. Take this quiz to find out which language you may be best suited for.</p1>
+      </div>
 
       <form id="formOne">
 
@@ -20,7 +22,7 @@
           <input id="name" class="form-control" type="text"></input>
         </div>
 
-        <div class="well">
+        <div id="reasonCode" class="well">
           <label for="whyCode" class="lineMargin">Why do you want to code?</label>
           <select id="whyCode">
             <option value="prodev">Be a professinal developer</option>
@@ -29,24 +31,25 @@
         </div>
 
         <div class="well">
-
-          <label for="whichPlatform" class="lineMargin">Are you most interested in:</label>
-          <select id="whichPlatform">
-            <option value="web">Web development</option>
-            <option value="mobile">Mobile development</option>
-            <option value="desktop" class="chooseDesktop">Desktop software</option>
-          </select>
+          <div id="platformSelect">
+            <label for="whichPlatform" class="lineMargin">Are you most interested in:</label>
+            <select id="whichPlatform">
+              <option value="web">Web development</option>
+              <option value="mobile">Mobile development</option>
+              <option value="desktop" class="chooseDesktop">Desktop software</option>
+            </select>
+          </div>
 
           <div id="howint">
-          <label for="mostInteresting" class="lineMargin">If you chose web development, what do you find most interesting?</label>
-          <select id="mostInteresting">
-            <option value="howInteract">How things interact with other things</option>
-            <option value="howWork">How things work</option>
-          </select>
+            <label for="mostInteresting" class="lineMargin">Within web development, what do you find most interesting?</label>
+            <select id="mostInteresting">
+              <option value="howInteract">How things interact with other things</option>
+              <option value="howWork">How things work</option>
+            </select>
           </div>
 
           <div id="mobileChoice">
-            <label for="mobileOption" class="lineMargin">If you chose mobile development, which are you more interested in?</label>
+            <label for="mobileOption" class="lineMargin">Within mobile development, which are you more interested in?</label>
             <select id="mobileOption">
               <option value="androidDev">Android development</option>
               <option value="windowsDev">Windows development</option>
@@ -54,11 +57,11 @@
           </div>
 
           <div id="chdesktop">
-          <label for="desktopChoice" class="lineMargin">If you chose desktop sofware development, which of these would you prefer?</label>
-          <select id="desktopChoice">
-            <option value="wind">Windows</option>
-            <option value="cross">Cross platform</>
-          </select>
+            <label for="desktopChoice" class="lineMargin">Within desktop software development, which of these would you prefer?</label>
+            <select id="desktopChoice">
+              <option value="wind">Windows</option>
+              <option value="cross">Cross platform</>
+            </select>
           </div>
         </div>
 
@@ -67,28 +70,32 @@
       </form>
     </div>
 
-    <div>
+    <div class="container">
       <div id="results" class="hideResults">
-      <h2><span class="userName"></span> you have been matched with:</h2>
+        <h2><span class="userName"></span> you may enjoy learning:</h2>
       </div>
 
       <div id="cSharp" class="hideResults">
         <img src="">
         <h3>c#/.NET</h3>
+        <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
       </div>
 
       <div id="java" class="hideResults">
         <img src="">
         <h3>Java</h3>
+        <p>Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.</p>
       </div>
 
       <div id="ruby" class="hideResults">
         <img src="">
         <h3>Ruby/Rails</h3>
+        <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
       </div>
 
       <div id="html" class="hideResults">
         <h3>HTML/JavaScript</h3>
+        <p>JavaScript is the only programming language understood by all web browsers, making it the most common language for web and mobile development. Students who learn how to code in JavaScript will be able to create simple to complex web pages, add interactivity features to an existing site, and update pages quickly without reloading.</P>
       </div>
     </div>
 
