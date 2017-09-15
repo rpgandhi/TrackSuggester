@@ -28,14 +28,29 @@
           </select>
         </div>
 
-        <div>
+        <div class="well">
           <label for="whichPlatform" class="lineMargin">Are you most interested in:</label>
           <select id="whichPlatform">
             <option value="web">Web development</option>
             <option value="mobile">Mobile development</option>
-            <option value="desktop">Desktop software</option>
+            <option value="desktop" class="chooseDesktop">Desktop software</option>
+
+            <label for="desktopChoice" class="lineMargin">Which of these would you prefer?</label>
+            <select id="desktopChoice">
+              <option value="wind">Windows</option>
+              <option value="cross">Cross platform</>
+            </select>
           </select>
         </div>
+
+        <div id="chdesktop">
+          <label for="desktopChoice" class="lineMargin">Which of these would you prefer?</label>
+          <select id="desktopChoice">
+            <option value="wind">Windows</option>
+            <option value="cross">Cross platform</>
+          </select>
+        </div>
+
 
         <div>
           <label for="mostInteresting" class="lineMargin">What do you find most interesting?</label>
@@ -51,7 +66,9 @@
             <option value="androidDev">Android development</option>
             <option value="windowsDev">Windows development</option>
           </select>
-        </dev>
+        </div>
+
+
 
         <button type="submit" class="btn">Find my programming language!</button>
 

@@ -10,10 +10,16 @@ $(document).ready(function() {
     var interest = $("select#mostInteresting").val();
     var mobileSelect = $("select#mobileOption").val();
     var nameInput = $("input#name").val();
+    var desktopch = $("select#desktopChoice").val();
 
     $(".hideResults").hide();
     $(".userName").text(nameInput);
     $("#results").show();
+
+    //var desktopfn = (".chooseDesktop").select(function() {
+      //$("#chdesktop").show();
+    //});
+
 
     if (code === "prodev" && platform === "mobile" && mobileSelect === "androidDev") { //&& age === "young" && interest === "Male"){
       $("#java").show();
@@ -25,6 +31,25 @@ $(document).ready(function() {
     } else if (code === "prodev" && platform === "web" && interest === "howWork") {
       $("#ruby").show();
     }
+    if (code === "prodev" && platform === "desktop" && desktopch === "cross"){
+      $("#java").show();
+    } else if (code === "prodev" && platform === "desktop" && desktopch === "wind") {
+      $("#cSharp").show();
+    }
+
+
+
+      //$(".chooseDesktop").click(function() {
+        //$("#chdesktop").show();
+      //}
+
+      //$("#chdesktop").show();
+
+
+    //else if (code === "prodev" && platform === "desktop" && desktopChoice === "wind") {
+      //$("#cSharp").show();
+    //}
+
 
     /*} else if (interest != "Male") {
       $("#fy").toggle();
@@ -49,8 +74,13 @@ $(document).ready(function() {
     } else if (interest != "Female") {
       $("#mom").show();
     }*/
+    //var desktopfn = (".chooseDesktop").select(function() {
+      //$("#chdesktop").show();
+    //});
+
     event.preventDefault();
 
     // clearForm();
+
   });
 });
