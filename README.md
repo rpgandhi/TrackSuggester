@@ -10,7 +10,7 @@ _Based on choices the user names, the program generates a track suggestion which
 
 ## Setup/Installation Requirements
 
-* _Naviagate to the repository on GitHub_
+* _Navigate to the repository on GitHub_
 * _Click the green clone/download link and copy the URL_
 * _Open Git on your machine and clone the repository the the location of your choice_
 * _Open the repository and enjoy!_
